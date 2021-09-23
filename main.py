@@ -3,7 +3,7 @@ import os
 
 def main():
     print(list_files("/github"))
-    path_to_search = os.listdir("/github/workspace/")
+    path_to_search = "/github/workspace/"
     print(path_to_search)
     file_locaiton = find_files("Dockerfile", "path_to_search")
     print(file_locaiton)
