@@ -1,7 +1,7 @@
 import os
 
 def main():
-    file = find("Dockerfile", "/gituhb/workspace/")
+    file = find("Dockerfile", "/github/workspace/")
     print(file)
     relative_path = "/github/workspace/"
     dockerfilelocaiton = (os.path.relpath(file, relative_path))
