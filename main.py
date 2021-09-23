@@ -2,9 +2,11 @@ import os
 
 
 def main():
-    # list_files("/github")
-    path_to_search = os.listdir("/github/workspace")
+    print(list_files("/github"))
+    path_to_search = os.listdir("/github/workspace/")
+    print(path_to_search)
     file_locaiton = find_files("Dockerfile", "path_to_search")
+    print(file_locaiton)
     print(f"::set-output name=myOutput::{file_locaiton}")
 
 def find_files(filename, search_path):
