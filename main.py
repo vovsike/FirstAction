@@ -1,9 +1,11 @@
 import os
 
 def main():
-    file = find("Dockerfile", "/github/workspace")
-    print(file)
-    print(f"::set-output name=myOutput::{file}")
+    file = find("Dockerfile", "/gituhb/workspace")
+    relative_path = "/gituhb/workspace"
+    dockerfilelocaiton = (os.path.relpath(file, relative_path))
+    print(dockerfilelocaiton)
+    print(f"::set-output name=myOutput::{dockerfilelocaiton}")
 
 def find(name, path):
     for root, dirs, files in os.walk(path):
