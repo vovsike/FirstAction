@@ -3,6 +3,7 @@ import os
 
 def main():
     file = find("Dockerfile", "/github/workspace")
+    print(file)
     # print(f"::set-output name=myOutput::{file_locaiton}")
 
 def find(name, path):
