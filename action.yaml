@@ -5,9 +5,9 @@ author: "Jacob Tomlinson"
 #   input:
 #     description: "Input to use"
 #     default: "world"
-# outputs:
-#   myOutput:
-#     description: "Output from the action"
+outputs:
+  myOutput:
+    description: "Output from the action"
 runs:
   using: "docker"
   image: "Dockerfile"
