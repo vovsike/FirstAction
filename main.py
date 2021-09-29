@@ -6,11 +6,8 @@ def main():
     # relative_path = "/github/workspace/"
     # dockerfilelocaiton = (os.path.relpath(file, relative_path))
     # print(f"::set-output name=myOutput::{dockerfilelocaiton}")
-    new_l = {
-        "Image name" : "DockerOne",
-        "Image path" : "some/path"
-    }
-    print(f"::set-output name=myOutput::{json.dumps(new_l)}")
+    new_l = [{"DockerName":"Docker","DockerPath":"somePath"},{"DockerName":"Docker2","DockerPath":"somePath2"}]
+    print(f"::set-output name=myOutput::{(new_l)}")
 
 def find(name, path):
     for root, dirs, files in os.walk(path):
