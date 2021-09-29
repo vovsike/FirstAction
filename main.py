@@ -7,7 +7,7 @@ def main():
     # dockerfilelocaiton = (os.path.relpath(file, relative_path))
     # print(f"::set-output name=myOutput::{dockerfilelocaiton}")
     new_l = ["DockerName", "DockerName2"]
-    print(f"::set-output name=myOutput::{str(new_l)}")
+    print(f"::set-output name=myOutput::{(new_l)}")
 
 def find(name, path):
     for root, dirs, files in os.walk(path):
