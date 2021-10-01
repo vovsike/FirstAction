@@ -9,8 +9,9 @@ def main():
         docker_dict={}
         relative_path = "/github/workspace/"
         dockerfilelocation = (os.path.relpath(path, relative_path))
-        print(os.path.dirname(dockerfilelocation))
+        # print(os.path.dirname(dockerfilelocation))
         docker_dict["DockerFile"] = dockerfilelocation
+        docker_dict["ImageName"] = os.path.dirname(dockerfilelocation)
         new_l.append(docker_dict)
     # relative_path = "/github/workspace/"
     # dockerfilelocaiton = (os.path.relpath(file, relative_path))
