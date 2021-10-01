@@ -16,9 +16,9 @@ def main():
     # relative_path = "/github/workspace/"
     # dockerfilelocaiton = (os.path.relpath(file, relative_path))
     # print(f"::set-output name=myOutput::{dockerfilelocaiton}")
-    print(new_l)
+    # print(new_l)
     # new_l = [{"DockerName":"docker/Dockerfile"},{"DockerName":"docker/Dockerfile"}]
-    # print(f"::set-output name=myOutput::{list(new_l)}")
+    print(f"::set-output name=myOutput::{list(new_l)}")
 
 
 def find(name, path):
