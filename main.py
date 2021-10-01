@@ -5,9 +5,12 @@ def main():
     new_l = []
     files_list = find("Dockerfile", "/github/workspace/")
     print(files_list)
-    for item in files_list:
+    for path in files_list:
         docker_dict={}
-        docker_dict["DockerFile"] = item
+        relative_path = "/github/workspace/"
+        dockerfilelocaiton = (os.path.relpath(path, relative_path))
+        print(os.path.dirname(dockerfilelocation))
+        docker_dict["DockerFile"] = dockerfilelocaiton
         new_l.append(docker_dict)
     # relative_path = "/github/workspace/"
     # dockerfilelocaiton = (os.path.relpath(file, relative_path))
