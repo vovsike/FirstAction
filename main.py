@@ -2,8 +2,8 @@ import os
 import json
 
 def main():
-    # file = find("Dockerfile", "/github/workspace/")
-    print(find("Dockerfile", "/github/workspace/"))
+    files_list = find("Dockerfile", "/github/workspace/")
+    print(files_list)
     # relative_path = "/github/workspace/"
     # dockerfilelocaiton = (os.path.relpath(file, relative_path))
     # print(f"::set-output name=myOutput::{dockerfilelocaiton}")
